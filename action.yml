@@ -23,4 +23,4 @@ inputs:
     required: false
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/iterate-ch/sphinx-action'
+  image: 'docker://ghcr.io/iterate-ch/sphinx-action:v1.0'
