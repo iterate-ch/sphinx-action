@@ -1,6 +1,6 @@
 name: 'Sphinx Build'
 description: 'Builds documentation using Sphinx'
-author: 'Ammar Askar'
+author: 'iterate GmbH, Ammar Askar'
 branding:
   icon: 'book'
   color: 'yellow'
@@ -19,8 +19,8 @@ inputs:
     description:
       Run before the build command, you can use this to install system level
       dependencies, for example with
-      "apt-get update -y && apt-get install -y perl"
+      "apk add --no-cache perl"
     required: false
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker://ghcr.io/iterate-ch/sphinx-action'
